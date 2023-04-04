@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/portafolio/static/css/main.b26e0438.css",
+    "main.js": "/portafolio/static/js/main.122c2a8a.js",
+    "static/media/Nofear.PNG": "/portafolio/static/media/Nofear.534d2311a58d379f557c.PNG",
+    "static/media/jisus.png": "/portafolio/static/media/jisus.fd77274ea01e50053b99.png",
+    "static/media/6208947.jpg": "/portafolio/static/media/6208947.94cf6ed6f90a09155e31.jpg",
+    "static/media/me.png": "/portafolio/static/media/me.964c909cd86f87812abe.png",
+    "static/media/SeñorBuscandoTaller2.jpeg": "/portafolio/static/media/SeñorBuscandoTaller2.9fc84ce08dcc0a2bd8f4.jpeg",
+    "static/media/matlab.PNG": "/portafolio/static/media/matlab.456558625598dcf2ca2d.PNG",
+    "static/media/seguridad.PNG": "/portafolio/static/media/seguridad.3f39018afab606d8169c.PNG",
+    "static/media/ga.PNG": "/portafolio/static/media/ga.6a56ec2f226a7d818061.PNG",
+    "static/media/gds.PNG": "/portafolio/static/media/gds.6659a2aaa598b71b1ed4.PNG",
+    "static/media/yo.jpg": "/portafolio/static/media/yo.b2bf98471d803ef97719.jpg",
+    "static/media/scrum.PNG": "/portafolio/static/media/scrum.fcb44b3ab58b3340018a.PNG",
+    "static/media/noback.png": "/portafolio/static/media/noback.3e2b543f5fce23ecc95d.png",
+    "static/media/cv.pdf": "/portafolio/static/media/cv.a9fc5df8ed6101544858.pdf",
+    "static/media/matricula.PNG": "/portafolio/static/media/matricula.0e1bd125c9a0acc2f8e7.PNG",
+    "static/media/yo4.jpg": "/portafolio/static/media/yo4.a89cd8599bde7fd91a09.jpg",
+    "static/media/yo3.jpg": "/portafolio/static/media/yo3.70876058abbc3d2538b9.jpg",
+    "index.html": "/portafolio/index.html",
+    "main.b26e0438.css.map": "/portafolio/static/css/main.b26e0438.css.map",
+    "main.122c2a8a.js.map": "/portafolio/static/js/main.122c2a8a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b26e0438.css",
+    "static/js/main.122c2a8a.js"
+  ]
+}

@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/portafolio/static/css/main.33c651d4.css",
-    "main.js": "/portafolio/static/js/main.0265ad17.js",
+    "main.js": "/portafolio/static/js/main.29976af5.js",
     "static/media/pata.PNG": "/portafolio/static/media/pata.d74074870f4efa4e888c.PNG",
     "static/media/Nofear.PNG": "/portafolio/static/media/Nofear.534d2311a58d379f557c.PNG",
     "static/media/jisus.png": "/portafolio/static/media/jisus.fd77274ea01e50053b99.png",
+    "static/media/cv1.pdf": "/portafolio/static/media/cv1.475e1a00fb3eb517c1ca.pdf",
     "static/media/6208947.jpg": "/portafolio/static/media/6208947.94cf6ed6f90a09155e31.jpg",
     "static/media/me.png": "/portafolio/static/media/me.964c909cd86f87812abe.png",
     "static/media/SeñorBuscandoTaller2.jpeg": "/portafolio/static/media/SeñorBuscandoTaller2.9fc84ce08dcc0a2bd8f4.jpeg",
@@ -21,10 +22,10 @@
     "static/media/yo3.jpg": "/portafolio/static/media/yo3.70876058abbc3d2538b9.jpg",
     "index.html": "/portafolio/index.html",
     "main.33c651d4.css.map": "/portafolio/static/css/main.33c651d4.css.map",
-    "main.0265ad17.js.map": "/portafolio/static/js/main.0265ad17.js.map"
+    "main.29976af5.js.map": "/portafolio/static/js/main.29976af5.js.map"
   },
   "entrypoints": [
     "static/css/main.33c651d4.css",
-    "static/js/main.0265ad17.js"
+    "static/js/main.29976af5.js"
   ]
 }

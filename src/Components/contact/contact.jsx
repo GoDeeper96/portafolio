@@ -1,12 +1,11 @@
 import React from 'react'
 import './contact.css'
 import {MdOutlineEmail} from 'react-icons/md'
-import {RiMessengerLine} from 'react-icons/ri'
 import {BsWhatsapp} from 'react-icons/bs'
 const contact = () => {
   return (
     <section id='contact'>
-      <h5>Mensajeame</h5>
+      {/* <h5>Mensajeame</h5> */}
       <h2>Contactame</h2>
       <div className='container contact__container'>
         <div className="contact__options">
@@ -20,7 +19,7 @@ const contact = () => {
             <BsWhatsapp className='contact__option-icon'/>
             <h4>Whatsapp</h4>
             <h5>+511 994244459</h5>
-            <a href="https://api.whatsapp.com/send?phone=+511994244459" target="_blank">Send a message</a>
+            <a href="https://wa.me/51994244459" target="_blank">Send a message</a>
           </article>
         </div>
         <form action=''>

@@ -1,177 +1,155 @@
-import React from 'react'
+
 import './portfolio.css'
-import IMG1 from '../../assets/6208947.jpg'
-import Nofear from '../../assets/Nofear.PNG'
-import imgScrum from '../../assets/scrum.PNG'
-import SeñorBuscandoTaller2 from '../../assets/SeñorBuscandoTaller2.jpeg'
-import Ielts from '../../assets/ielts-logotipo.png'
-import Seguridad from '../../assets/seguridad.PNG'
-import { FaReact } from 'react-icons/fa'
-import { DiCss3Full } from 'react-icons/di'
-import { FaHtml5 } from 'react-icons/fa'
-import { DiJavascript1 } from 'react-icons/di'
-import { FaJava } from 'react-icons/fa'
-import { DiLess } from 'react-icons/di'
-import { SiPowerbi} from 'react-icons/si'
-import { DiVisualstudio } from 'react-icons/di'
-import { SiMicrosoftsqlserver } from 'react-icons/si'
-import { SiPostgresql } from 'react-icons/si'
-import { SiGoogleanalytics } from 'react-icons/si'
-import { Icon } from '@iconify/react';
-import matlab from '../../assets/matlab.PNG'
-import gds from '../../assets/gds.PNG'
-import ga from '../../assets/ga.PNG'
-import matricula from '../../assets/matricula.PNG'
+
+import tradde1 from '../../assets/tradde/Login.JPG'
+import tradde2 from '../../assets/tradde/image2.svg'
+import tradde3 from '../../assets/tradde/image3.svg'
+
+import analytics1 from '../../assets/analytis/image1.svg'
+import analytics2 from '../../assets/analytis/image2.svg'
+import analytics3 from '../../assets/analytis/image3.svg'
+
+import cubbo1 from '../../assets/cubbo/image1.svg'
+import cubbo2 from '../../assets/cubbo/image2.svg'
+import cubbo3 from '../../assets/cubbo/image3.svg'
+
+
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
 const portfolio = () => {
+ 
   return (
     <section id='portfolio'>
       <h5>Mis ultimos proyectos</h5>
-      <h2>Portafolio y Certificados</h2>
+      <h2>Proyectos</h2>
+     
       <div className="container portfolio__container">
+      
+
+       
         <article className="portfolio__item">
-
-          <div className="portfolio__item-image">
-            <img src={SeñorBuscandoTaller2} alt=""/>
+        <div className="portfolio__item-image">
+        <Swiper
+        modules={[Autoplay,Navigation, Pagination]}
+        spaceBetween={20}
+        slidesPerView={1}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{ clickable: true }}
+        loop={true}
+        className="mySwiper"
+        
+      >
+        <SwiperSlide>
+          <img src={analytics1} alt="Imagen 1" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={analytics2} alt="Imagen 2" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={analytics3} alt="Imagen 3" />
+        </SwiperSlide>
+       
+      </Swiper>
+      </div>
+          <h3>Analytics</h3>
+          <p>B2B que permite estandarizar, visualizar y exportar gran cantidad de data a proveedores.</p>
+          <div className='SpaceRowPortfolio'>
+        
+         
           </div>
-          <h3>No fear Project - 2020</h3>
-          <DiJavascript1 size={30}/>
-          <DiCss3Full size={30}/>
-          <FaHtml5 size={30}/>
-          <div className="portfolio__item-cta">
-          <a href="https://github.com/GoDeeper96/NoFearProjectOne" className='btn' target='_blank'>Github</a>
-          <a href="https://godeeper96.github.io/NoFearProjectOne/" className="btn btn-primary" target="_blank">Live demo</a>
-          </div>
-        </article>
-        <article className="portfolio__item">
-
-          <div className="portfolio__item-image">
-            <img src={IMG1} alt=""/>
-          </div>
-          <h3>MatriculaApp - 2021</h3>
-          <SiPostgresql size={30} />
-          <DiJavascript1 size={30}/>
-          <DiLess size={30}/>
-          <FaJava size={30}/>
-          <DiCss3Full size={30}/>
-          <FaHtml5 size={30}/>
-          <div className="portfolio__item-cta">
-          <a href="https://github.com/GoDeeper96/matriculaApp" className='btn' target='_blank'>Github</a>
-          <a href="https://dribble.com/Alien_pixels" className="btn btn-primary" target="_blank">Live demo</a>
-          </div>
-        </article>
-          {/* <article className="portfolio__item">
-            
-            <div className="portfolio__item-image">
-              <img src={IMG1} alt=""/>
-            </div>
-            <h3>Servicio ETL a Empresa General Cable 2022</h3>
-            <SiMicrosoftsqlserver size={30}/>
-            <SiPowerbi size={30} />
-            <DiVisualstudio size={30}/>
-            <div className="portfolio__item-cta">
-            <a href="https://github.com" className='btn' target='_blank'>Github</a>
-            <a href="https://dribble.com/Alien_pixels" className="btn btn-primary" target="_blank">Live demo</a>
-            </div>
-          </article> */}
-        <article className="portfolio__item">
-
-          <div className="portfolio__item-image">
-            <img src={IMG1} alt=""/>
-          </div>
-          <h3>TuPataDerecha - 2022</h3>
-          <Icon icon="logos:google-data-studio" style={{ fontSize: '30px' }}/>
-          <SiGoogleanalytics size={30}/>
-          <div className="portfolio__item-cta">
-          <a href="https://www.tupataderecha.org/" className="btn btn-primary" target="_blank">Demo</a>
-          </div>
-        </article>
-        {/* <article className="portfolio__item">
-
-          <div className="portfolio__item-image">
-            <img src={IMG1} alt=""/>
-          </div>
-          <h3>Desarrollo Web de InversionesJyF - 2023</h3>
-          <FaReact size={30}/>
-          <DiJavascript1 size={30}/>
-          <DiCss3Full size={30}/>
-          <FaHtml5 size={30}/>
-
-          <div className="portfolio__item-cta">
-          
-          <a href="https://github.com" className='btn' target='_blank'>Github</a>
-          <a href="https://dribble.com/Alien_pixels" className="btn btn-primary" target="_blank">Live demo</a>
-          </div>
-        </article> */}
-        {/* <article className="portfolio__item">
-
-          <div className="portfolio__item-image">
-            <img src={IMG1} alt=""/>
-          </div>
-          <h3>LiliApp - 2023</h3>
-          <div className="portfolio__item-cta">
-          <a href="https://www.tupataderecha.org/" className="btn btn-primary" target="_blank">Demo</a>
-          </div>
-        </article> */}
-       <article className="portfolio__item">
-
-          <div className="portfolio__item-image">
-            <img src={ga} alt=""/>
-          </div>
-          <h3>Google Analytics Avanzado</h3>
-          <div className="portfolio__item-cta">
-          <a href="https://drive.google.com/file/d/1IGdcwdx03Rp0RGppu2ySmQABhhuKZf7G/view?usp=sharing" className="btn btn-primary" target="_blank">Google Analytics</a>
-          </div>
+        
         </article>
         <article className="portfolio__item">
 
-          <div className="portfolio__item-image">
-            <img src={gds} alt=""/>
+        <div className="portfolio__item-image">
+        <Swiper
+        modules={[Autoplay,Navigation, Pagination]}
+        spaceBetween={20}
+        slidesPerView={1}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{ clickable: true }}
+        loop={true}
+        className="mySwiper"
+        
+      >
+        <SwiperSlide>
+          <img src={tradde1} alt="Imagen 1" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={tradde2} alt="Imagen 2" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={tradde3} alt="Imagen 3" />
+        </SwiperSlide>
+      </Swiper>
+      </div>
+          <h3>Tradde</h3>
+          <p style={{textAlign:'justify'}}>Plataforma web que permite gestionar promociones en ambientes de prueba y producción. Sirve a diferentes aplicaciones web y moviles.</p>
+          <div className='SpaceRowPortfolio'>
+      
           </div>
-          <h3>Google Data Studio</h3>
           <div className="portfolio__item-cta">
-          <a href="https://drive.google.com/file/d/1HvPnpM14KsttJ47EaXTMw6fMLpbETI9l/view?usp=sharing" className="btn btn-primary" target="_blank">Google Data Studio</a>
+          {/* <a href="https://github.com/GoDeeper96/matriculaApp" className='btn' target='_blank'>Github</a>
+          <a href="https://dribble.com/Alien_pixels" className="btn btn-primary" target="_blank">Live demo</a> */}
           </div>
         </article>
+      
         <article className="portfolio__item">
 
-          <div className="portfolio__item-image">
-            <img src={Seguridad} alt=""/>
-          </div>
-          <h3>Coursera IBM Security Analyst Certificate</h3>
-          <div className="portfolio__item-cta">
-          <a href="https://drive.google.com/file/d/1ES-ZpuyuoyFz2u95IgsiORQQtjuKbdgW/view?usp=sharing" className="btn btn-primary" target="_blank">Certificado</a>
-          </div>
-        </article>
-        <article className="portfolio__item">
+        <div className="portfolio__item-image">
+        <Swiper
+        modules={[Autoplay,Navigation, Pagination]}
+        spaceBetween={20}
+        slidesPerView={1}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{ clickable: true }}
+        loop={true}
+        className="mySwiper"
+        
+      >
+        <SwiperSlide>
+          <img src={cubbo1} alt="Imagen 1" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={cubbo2} alt="Imagen 2" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={cubbo3} alt="Imagen 3" />
+        </SwiperSlide>
+      </Swiper>
+      </div>
+          <h3>Cubbo</h3>
+          <p style={{textAlign:'justify'}}>B2B de reporteria avanzada que permite crear reportes con graficos personalizables, gestionar cargas pesadas con colas en segundo plano, notificaciones en tiempo real, y consultas de agregación en entornos de gran volumen de datos(BigData).</p>
 
-          <div className="portfolio__item-image">
-            <img src={matlab} alt=""/>
-          </div>
-          <h3>Matlab Basico</h3>
-          <div className="portfolio__item-cta">
-          <a href="https://drive.google.com/file/d/1YnmRDYwtsr9qMLH3f59w8JTLHAQYZ10R/view?usp=sharing" className="btn btn-primary" target="_blank">Matlab</a>
-          </div>
-        </article>
-        <article className="portfolio__item">
+          <div className='SpaceRowPortfolio'>
 
-          <div className="portfolio__item-image">
-            <img src={imgScrum} alt=""/>
           </div>
-          <h3>Certificado SCRUM</h3>
           <div className="portfolio__item-cta">
-          <a href="https://drive.google.com/file/d/1ES-ZpuyuoyFz2u95IgsiORQQtjuKbdgW/view?usp=sharing" className="btn btn-primary" target="_blank">Descargar Aqui</a>
+     
           </div>
         </article>
-        <article className="portfolio__item">
 
-          <div className="portfolio__item-image">
-            <img src={Ielts} alt=""/>
-          </div>
-          <h3>Certificado IELTS B2 </h3>
-          <div className="portfolio__item-cta">
-          <a href="https://drive.google.com/file/d/1FBo10MWP_JZB8UsG1m_6cYiBK7I-6x6u/view?usp=sharing" className="btn btn-primary" target="_blank">Descargar Aqui</a>
-          </div>
-        </article>
       </div>
     </section>
   )

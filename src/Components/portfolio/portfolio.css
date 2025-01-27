@@ -1,6 +1,6 @@
 .portfolio__container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     gap: 2.5rem;
 }
 .portfolio__item{
@@ -19,13 +19,52 @@
     overflow: hidden;
 }
 .portfolio__item h3{
-    margin: 1.2rem 0 2rem;
+    margin: 1.2rem 0 0.7rem;
 }
 .portfolio__item-cta{
     display:flex;
     gap:1rem;
     margin-bottom: 1rem;
 }
+.SpaceRowPortfolio{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5rem;
+    gap:1rem
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 1rem;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+  }
+  .mySwiper {
+    width: 100%; /* Ocupa todo el ancho del contenedor padre */
+    height:20rem ; /* Ajusta la altura automáticamente */
+    
+  
+  }
+  
+  .mySwiper img {
+    border-radius: 10px;
+  }  
 
 @media screen and (max-width: 1024px){
     .portfolio__container{

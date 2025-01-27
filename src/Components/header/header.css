@@ -1,14 +1,82 @@
 header{
-    height:100vh;
+    
     padding-top:  7rem;
     overflow: hidden;
 }
 .header_container{
     text-align: center;
     height: 100%;
-    position: relative;
+   
 }
+.MinufyText{
+    font-size: 1rem;
+}
+.wrapperTech {
+    display: flex;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem;
+    border: 0.1rem solid #c8d8f2;
+    gap:0.4rem
 
+}
+.attractiveVerMas{
+    cursor: pointer;
+    color:'white';
+    transition:var(--transition);
+}
+.attractiveVerMas:hover{
+    color:var(--color-primary);
+
+}
+/*========tooltip======*\
+   .tooltip {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    /* Estilo del texto del tooltip */
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+      }
+    .tooltip .tooltip-text {
+        visibility: hidden; /* Oculto por defecto */
+        width: 200px; /* Ancho del tooltip */
+        background-color: #fffdfd; /* Fondo oscuro */
+        color: #474747; /* Texto blanco */
+        text-align: center;
+        border-radius: 5px; /* Bordes redondeados */
+        padding: 8px;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%; /* Posicionado sobre el elemento */
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0; /* Transparente por defecto */
+        transition: opacity 0.3s; /* Efecto de transición */
+      }
+  
+      /* Flecha del tooltip */
+      .tooltip .tooltip-text::after {
+        content: "";
+        position: absolute;
+        top: 100%; /* Flecha debajo del tooltip */
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #2a69ce transparent transparent transparent;
+      }
+  
+      /* Mostrar el tooltip al pasar el mouse */
+      .tooltip:hover .tooltip-text {
+        visibility: visible;
+        opacity: 1;
+      }
 /* ====================== CTA ==================*/
 .cta{
     margin-top: 2.5rem;
@@ -33,18 +101,66 @@ header{
     background: var(--color-primary);
 }
 /* ====================== ME ==================*/
+.SpaceLinks{
+    margin-top: 2rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+}
+.SpaceColDeChill{
+    padding: 1.5rem;
+    margin-top: 2rem;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.SpaceRow{
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    /* flex-direction: row; */
+
+}
+.SpaceLinksNoTop{
+    
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 1rem;
+}
+.container-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.container-flexTituSub{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
 
 .me{
-    background: linear-gradient(
-    var(--color-green), transparent );
+   
+  
+    border-radius: 10%;
     width: 22rem;
-    height: 24rem;
-    position: absolute; 
-    left:calc(50% - 11rem);
-    margin-top: 4rem;
-    border-radius: 12rem 12rem 0 0;
-    overflow: hidden;
-    padding: 5rem  1.5rem  1.5rem 1.5rem;
+    height: 22rem;
+    
 }
 
 /* ====================== scrolldown ==================*/
@@ -57,20 +173,3 @@ header{
     font-weight: 200;
     font-size: 0.9rem;
 }
-/* =================== MEDIA QUERIES(MEDIUM DEVICES) =============== */
-@media screen and (max-width:1024px){
-    header{
-        height: 68vh;
-    }
-    
-} 
-/* =================== MEDIA QUERIES(SMALL DEVICES) =============== */
-@media screen and (max-width:600px){
-    header{
-        height: 100vh;
-    }
-    .header__socials,
-    .scroll__down{
-        display: none;
-    }
-} 

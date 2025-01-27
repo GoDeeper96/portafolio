@@ -10,17 +10,23 @@ nav {
     bottom: 2rem;
     display: flex;
     gap: 0.8rem;
-    border-radius: 3rem;
+    border-radius: 1rem;
     backdrop-filter: blur(15px);   
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 nav a{
+    gap: 1rem;
     background: transparent;
     padding: 0.9rem;
-    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
     display: flex;
-    color: var(--color-light);
-    font-size: 1.1rem;
+    color: dodgerblue;
+    font-size: 1.5rem;
 }
 
 nav a:hover {

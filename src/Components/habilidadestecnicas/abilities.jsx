@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './abilities.css'
 import { BsPatchCheckFill } from 'react-icons/bs'
+import { AppContextPanel } from '../../App'
 const Abilities = () => {
+    const { language,SetLaguange  }  = useContext(AppContextPanel)
   return (
     <section id='abilities'>  
-    <h5>Conocimiento</h5>
-      <h2>Mis habilidades tecnicas</h2>
+    <h5>{language==='es'?'Conocimiento':'Knowledge'}</h5>
+      <h2>{language==='es'?'Mis habilidades tecnicas':'My Technical Knowledge'}</h2>
 <div className="container experience__container">
         <div className="experience__frontend">
           <h3>Frontend Development</h3>
@@ -166,7 +168,7 @@ const Abilities = () => {
           </div>
         </div>
         <div className='experience__cloud'>
-        <h3>Otros</h3>
+        <h3>{language==='es'?'Otros':'Others'}</h3>
         <div className='experience__content'>
 
      

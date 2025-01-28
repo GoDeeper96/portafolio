@@ -14,7 +14,7 @@ import cubbo2 from '../../assets/cubbo/image2.svg'
 import cubbo3 from '../../assets/cubbo/image3.svg'
 
 
-import React, { useRef, useState } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -27,13 +27,14 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { AppContextPanel } from '../../App'
 
-const portfolio = () => {
- 
+const Portfolio = () => {
+  const { language,SetLaguange  }  = useContext(AppContextPanel)
   return (
     <section id='portfolio'>
-      <h5>Mis ultimos proyectos</h5>
-      <h2>Proyectos</h2>
+      <h5>{language==='es'?'Mis ultimos proyectos':`My last projects`}</h5>
+      <h2>{language==='es'?'Proyectos':`Projects`}</h2>
      
       <div className="container portfolio__container">
       
@@ -67,7 +68,7 @@ const portfolio = () => {
       </Swiper>
       </div>
           <h3>Analytics</h3>
-          <p>B2B que permite estandarizar, visualizar y exportar gran cantidad de data a proveedores.</p>
+          <p>{language==='es'?'B2B que permite estandarizar, visualizar y exportar gran cantidad de data a proveedores.':`B2B that allows to standarize, visualize and export big volumes of data to providers/users`}</p>
           <div className='SpaceRowPortfolio'>
         
          
@@ -102,7 +103,7 @@ const portfolio = () => {
       </Swiper>
       </div>
           <h3>Tradde</h3>
-          <p style={{textAlign:'justify'}}>Plataforma web que permite gestionar promociones en ambientes de prueba y producción. Sirve a diferentes aplicaciones web y moviles.</p>
+          <p style={{textAlign:'justify'}}>{language==='es'?'Plataforma web que permite gestionar promociones en ambientes de prueba y producción. Sirve a diferentes aplicaciones web y moviles.':'Web platform that allows managing promotions in testing and production environments. It serves different web and mobile applications'}</p>
           <div className='SpaceRowPortfolio'>
       
           </div>
@@ -140,7 +141,7 @@ const portfolio = () => {
       </Swiper>
       </div>
           <h3>Cubbo</h3>
-          <p style={{textAlign:'justify'}}>B2B de reporteria avanzada que permite crear reportes con graficos personalizables, gestionar cargas pesadas con colas en segundo plano, notificaciones en tiempo real, y consultas de agregación en entornos de gran volumen de datos(BigData).</p>
+          <p style={{textAlign:'justify'}}>{language==='es'?'B2B de reporteria avanzada que permite crear reportes con graficos personalizables, gestionar cargas pesadas con colas en segundo plano, notificaciones en tiempo real, y consultas de agregación en entornos de gran volumen de datos(BigData).':'B2B advanced reporting platform that allows creating reports with customizable charts, managing heavy loads with background queues, real-time notifications, and aggregation queries in high-volume data environments (Big Data).'}</p>
 
           <div className='SpaceRowPortfolio'>
 
@@ -155,4 +156,4 @@ const portfolio = () => {
   )
 }
 
-export default portfolio
+export default Portfolio

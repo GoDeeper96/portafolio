@@ -108,6 +108,17 @@ header{
     justify-content: center;
     gap: 1rem;
 }
+.flagButton{
+    cursor: pointer;
+    
+}
+.SpaceFlags{
+    display: flex;
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1rem;
+}
 .SpaceColDeChill{
     padding: 1.5rem;
     margin-top: 2rem;

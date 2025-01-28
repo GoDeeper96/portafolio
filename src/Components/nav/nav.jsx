@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './nav.css'
 import { AiFillProject, AiOutlineHome } from 'react-icons/ai'
 
 import { useState } from 'react'
+import { AppContextPanel } from '../../App'
 
 const Nav = () => {
   const [acttiveNav, setActiveNav] = useState('#');
+   const { language,SetLaguange  }  = useContext(AppContextPanel)
   return (
     <nav>
       <a href="#" 
@@ -18,22 +20,38 @@ const Nav = () => {
         onClick={()=>setActiveNav('#experience')}
         className={acttiveNav==='#experience'?'active':''}
       >        
-       Experiencia Laboral 
+       {language==='es'?'Experiencia Laboral':'Work Experience'}
         </a>
        
         <a href="#abilities"
         onClick={()=>setActiveNav('#abilities')}
-        className={acttiveNav==='#services'?'active':''}
+        className={acttiveNav==='#abilities'?'active':''}
       >    
-      Habilidades Tecnicas  
+      {language==='es'?'Habilidades tecnicas':'Technical Abilities'}
       </a>
       <a href="#portfolio"
         onClick={()=>setActiveNav('#portfolio')}
-        className={acttiveNav==='#services'?'active':''}
+        className={acttiveNav==='#portfolio'?'active':''}
       >    
-      Proyectos  
+         {language==='es'?'Proyectos':'Projects'}  
       </a>
-     
+      <a 
+        style={{cursor:'pointer'}}
+        onClick={()=>{
+          if(language==='es')
+          {
+            SetLaguange('en')
+          }
+          if(language==='en')
+          {
+            SetLaguange('es')
+          }
+         
+        }}
+        
+      >    
+         {language==='es'?'Cambiar idioma':'Change Language'}  
+      </a>
       
     
      

@@ -1,16 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './footer.css'
+import { AppContextPanel } from '../../App'
 
-const footer = () => {
+const Footer = () => {
+  const { language,SetLaguange  }  = useContext(AppContextPanel)
   return (
     <footer>
       <a href='#' className='footer__logo'> Sebastian Julon </a>
       <ul className='permalinks'>
         <li><a href="#">Home</a></li>
    
-        <li><a href="#experience">Experiencia</a></li>
-        <li><a href="#abilities">Habilidades tecnicas</a></li>
-        <li><a href="#portfolio">Proyectos</a></li>
+        <li><a href="#experience">{language==='es'?'Experiencia':'Experience'}</a></li>
+        <li><a href="#abilities">{language==='es'?'Knowledge':'Habilidades Tecnicas'}</a></li>
+        <li><a href="#portfolio">{language==='es'?'Projects':'Proyectos'}</a></li>
    
       </ul>
       <div className='footer__socials'>
@@ -23,4 +25,4 @@ const footer = () => {
   )
 }
 
-export default footer
+export default Footer

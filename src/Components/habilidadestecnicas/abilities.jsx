@@ -40,6 +40,13 @@ const Abilities = () => {
                 {/* <small className='text-light'>Intermediate</small> */}
               </div>
             </article>
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon'/>
+              <div>
+                <h4>NextJS</h4>
+                {/* <small className='text-light'>Intermediate</small> */}
+              </div>
+            </article>
             {/* <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
@@ -211,6 +218,20 @@ const Abilities = () => {
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
                 <h4>Power BI</h4>
+                {/* <small className='text-light'>Intermediate</small> */}
+              </div>
+            </article>
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon'/>
+              <div>
+                <h4>Docker</h4>
+                {/* <small className='text-light'>Intermediate</small> */}
+              </div>
+            </article>
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon'/>
+              <div>
+                <h4>Kubernetes</h4>
                 {/* <small className='text-light'>Intermediate</small> */}
               </div>
             </article>

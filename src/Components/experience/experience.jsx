@@ -12,7 +12,7 @@ const Experience = () => {
           <div className='SpaceRowAround'>
         <h2 ><a href='https://radar-365.com/'>Radar 365</a></h2>
         
-        <h5 className="text-light">{language==='es'?'Mayo.2023 - Actualidad':'May.2023 - Mar.2025'}</h5>
+        <h5 className="text-light">{language==='es'?'Mayo.2023 - May.2025':'May.2023 - May.2025'}</h5>
         
         </div>
          <h5 className="text-light">{language==='es'?'Desarrollador FullStack':'FullStack Developer'}</h5>

@@ -5,12 +5,13 @@ import './header.css'
 import CV from '../../assets/cv.pdf'
 import ahorasi from '../../assets/noback.png'
 import { FaGithub, FaNodeJs } from 'react-icons/fa'
-import { PiReadCvLogo } from "react-icons/pi";
+// import { PiReadCvLogo } from "react-icons/pi";
 import Flag from 'react-world-flags'
+import { TiDocumentText } from "react-icons/ti";
 
 import { BsLinkedin, BsWhatsapp } from 'react-icons/bs'
 import { DiMongodb, DiReact } from 'react-icons/di'
-import { SiJavascript, SiMicrosoftsqlserver, SiMongodb, SiTypescript } from 'react-icons/si'
+import { SiJavascript, SiMicrosoftsqlserver, SiMongodb, SiSpring, SiTypescript } from 'react-icons/si'
 import { AppContextPanel } from '../../App'
 
 const Header = (props) => {
@@ -61,14 +62,14 @@ It all started with a seed of drive called creativity, and, of course, my motiva
         </p>
         <div className='SpaceLinks'>
         <a href="https://www.linkedin.com/in/sebastian-julon-chamana/" target="_blank"><BsLinkedin size={'3rem'}/></a>
-        <a href="https://github.com" target="_blank"><FaGithub size={'3rem'}/></a>
+        <a href="https://github.com/GoDeeper96" target="_blank"><FaGithub size={'3rem'}/></a>
         <div className='tooltip'>
         <a href="https://wa.me/51994244459" target="_blank"><BsWhatsapp size={'3rem'}/></a>
         <span className="tooltip-text">{language==='es'?`Comunicate conmigo por WhatsApp`:'Chat with me'}</span>
         </div>
         <div className='tooltip'>
           
-        <a href={CV} target="_blank"><PiReadCvLogo size={'3rem'}/></a>
+        <a href={CV} target="_blank"><TiDocumentText size={'3rem'}/></a>
         <span className="tooltip-text">{language==='es'?'Descargar mi CV':'Download my CV'}</span>
         </div>
         </div>
@@ -101,8 +102,8 @@ It all started with a seed of drive called creativity, and, of course, my motiva
            <FaNodeJs size={'3rem'}/>
            </div>
            <div className='wrapperTech'>
-            MongoDB
-           <SiMongodb size={'3rem'}/>
+            Spring
+           <SiSpring size={'3rem'}/>
            </div>
            <div className='wrapperTech'>
             SQL Server

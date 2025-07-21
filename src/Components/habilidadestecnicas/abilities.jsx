@@ -83,7 +83,7 @@ const Abilities = () => {
                 {/* <small className='text-light'>Advanced</small> */}
               </div>
             </article>
-            
+              
             
            
             <article className='experience__details'>
@@ -129,6 +129,34 @@ const Abilities = () => {
                 {/* <small className='text-light'>Intermediate</small> */}
               </div>
             </article>
+             <article className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon'/>
+              <div>
+                <h4>NestJs</h4>
+                {/* <small className='text-light'>Intermediate</small> */}
+              </div>
+            </article>
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon'/>
+              <div>
+                <h4>.NET</h4>
+                {/* <small className='text-light'>Advanced</small> */}
+              </div>
+            </article>
+             <article className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon'/>
+              <div>
+                <h4>Spring</h4>
+                {/* <small className='text-light'>Advanced</small> */}
+              </div>
+            </article>
+              <article className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon'/>
+              <div>
+                <h4>Flask</h4>
+                {/* <small className='text-light'>Advanced</small> */}
+              </div>
+            </article>
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
@@ -136,6 +164,7 @@ const Abilities = () => {
       
               </div>
             </article>
+            
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
@@ -157,17 +186,11 @@ const Abilities = () => {
       
               </div>
             </article>
+           
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
-                <h4>Spring</h4>
-                {/* <small className='text-light'>Advanced</small> */}
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>PosgreSQL</h4>
+                <h4>PostgreSQL</h4>
               
               </div>
             </article>
@@ -196,6 +219,13 @@ const Abilities = () => {
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
+                <h4>Azure Devops</h4>
+                {/* <small className='text-light'>Intermediate</small> */}
+              </div>
+            </article>
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon'/>
+              <div>
                 <h4>Selenium</h4>
                 {/* <small className='text-light'>Intermediate</small> */}
               </div>
@@ -203,24 +233,26 @@ const Abilities = () => {
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
-                <h4>Servicios Cloud AWS, GCP.</h4>
+                <h4>EC2</h4>
+                <h4>AWS Lambda</h4>
+                <h4>AWS DynamoDB</h4>
+                <h4>Api Gateway</h4>
+                <h4>Elastic Beanstalk</h4>
                 {/* <small className='text-light'>Intermediate</small> */}
               </div>
             </article>
-            <article className='experience__details'>
+             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
-                <h4>Google Data Studio</h4>
+                <h4>Azure Apps Services</h4>
+                <h4>Azure VMS</h4>
+                <h4>Azure Blob Storage</h4>
+                <h4>Data Factory</h4>
+                <h4>Azure Load Balancer</h4>
                 {/* <small className='text-light'>Intermediate</small> */}
               </div>
             </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>Power BI</h4>
-                {/* <small className='text-light'>Intermediate</small> */}
-              </div>
-            </article>
+
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
@@ -231,7 +263,7 @@ const Abilities = () => {
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
-                <h4>Kubernetes</h4>
+                <h4>Terraform</h4>
                 {/* <small className='text-light'>Intermediate</small> */}
               </div>
             </article>

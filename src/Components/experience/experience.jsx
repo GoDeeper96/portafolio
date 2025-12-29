@@ -47,44 +47,7 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="experience__job">
-          <div className="SpaceRowAround">
-            <h2>Indigital</h2>
-            <h5 className="text-light">{language === "es" ? "Agos.2025 - Dic.2025" : "Aug.2025 - Dec.2025"}</h5>
-          </div>
-          <h5 className="text-light">
-            {language === "es" ? "Desarrollador Backend (Consultor)" : "Backend Developer (Consultant)"}
-          </h5>
-          <div className="gridSeparated">
-            <div>
-              <h3 className="TextSubTititle">{language === "es" ? "Funciones" : `What I've done`}</h3>
-            </div>
-            <p>
-              •{" "}
-              {language === "es"
-                ? "Diseñé e implementé Amazon SQS para habilitar la comunicación cross-account entre dos aplicaciones basadas en DynamoDB, incluyendo integración en tiempo real mediante WebSockets."
-                : "Designed and implemented Amazon SQS to enable cross-account communication between two DynamoDB-based applications, including real-time integration via WebSockets."}
-            </p>
-            <p>
-              •{" "}
-              {language === "es"
-                ? "Desarrollé funcionalidades backend para dos módulos principales, siguiendo diseños UX en Figma y HU (historias de usuario), en estrecha colaboración con los equipos de frontend y QA."
-                : "Developed backend functionalities for two main modules, following UX designs in Figma and user stories, in close collaboration with frontend and QA teams."}
-            </p>
-            <p>
-              •{" "}
-              {language === "es"
-                ? "Implementé un servicio de firma digital de documentos utilizando librerías en Python."
-                : "Implemented a digital document signing service using Python libraries."}
-            </p>
-            <p>
-              •{" "}
-              {language === "es"
-                ? "Refactoricé código backend para mejorar mantenibilidad y calidad."
-                : "Refactored backend code to improve maintainability and quality."}
-            </p>
-          </div>
-        </div>
+   
 
         <div className="experience__job">
           <div className="SpaceRowAround">

@@ -8,7 +8,7 @@ const Abilities = () => {
     <section id='abilities'>  
     <h5>{language==='es'?'Conocimiento':'Knowledge'}</h5>
       <h2>{language==='es'?'Mis habilidades tecnicas':'My Technical Knowledge'}</h2>
-<div className="container experience__container">
+<div className="container experience__container__">
         <div className="experience__frontend">
           <h3>Frontend Development</h3>
           <div className="experience__content">
@@ -236,8 +236,12 @@ const Abilities = () => {
                 <h4>EC2</h4>
                 <h4>AWS Lambda</h4>
                 <h4>AWS DynamoDB</h4>
+                <h4>AWS S3</h4>
+                <h4>AWS SQS</h4>
                 <h4>Api Gateway</h4>
-                <h4>Elastic Beanstalk</h4>
+                <h4>CloudFormation</h4>
+                <h4>AWS Amplify</h4>
+                <h4>SAM</h4>
                 {/* <small className='text-light'>Intermediate</small> */}
               </div>
             </article>
@@ -260,13 +264,7 @@ const Abilities = () => {
                 {/* <small className='text-light'>Intermediate</small> */}
               </div>
             </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>Terraform</h4>
-                {/* <small className='text-light'>Intermediate</small> */}
-              </div>
-            </article>
+            
             </div>
         </div>
         </div>

@@ -8,7 +8,7 @@ const Experience = () => {
       <h5>{language === "es" ? "Experiencia adquirida" : "Experience"}</h5>
       <h2>{language === "es" ? "Mi experiencia" : "My Work Experience"}</h2>
       <div className="container experience__container">
-        <div className="experience__job">
+        {/* <div className="experience__job">
           <div className="SpaceRowAround">
             <h2>
               <a href="https://www.utp.edu.pe/">UTP (Universidad Tecnológica del Perú)</a>
@@ -45,8 +45,48 @@ const Experience = () => {
                 : "Researched and evaluated new technologies to improve existing applications."}
             </p>
           </div>
+        </div> */}
+        <div className="experience__job">
+          <div className="SpaceRowAround">
+            <h2>
+              <a href="https://indigital.pe/">Indigital</a>
+            </h2>
+            <h5 className="text-light">{language === "es" ? "Agos.2025 - Dec.2025" : "Aug.2025 - Dec.2025"}</h5>
+          </div>
+          <h5 className="text-light">{language === "es" ? "Desarrollador Backend" : "Backend Developer"}</h5>
+          <div className="gridSeparated">
+            <div>
+              <h3 className="TextSubTititle">{language === "es" ? "Funciones" : `What I've done`}</h3>
+              <p className="text-light">
+                Stack: AWS DynamoDB, S3, Python, API Gateway, Route 53, SQS, Lambda, WebSocket, Cognito
+              </p>
+            </div>
+            <p>
+              •{" "}
+              {language === "es"
+                ? "Diseñé e implementé Amazon SQS para habilitar la comunicación cross-account entre dos aplicaciones basadas en DynamoDB, en distintos entornos, incluyendo integración en tiempo real mediante WebSockets."
+                : "Designed and implemented Amazon SQS to enable cross-account communication between two DynamoDB-based applications in different environments, including real-time integration via WebSockets."}
+            </p>
+            <p>
+              •{" "}
+              {language === "es"
+                ? "Desarrollé funcionalidades backend con Python desplegando lambdas para dos módulos principales."
+                : "Developed backend functionalities with Python by deploying lambdas for two main modules."}
+            </p>
+            <p>
+              •{" "}
+              {language === "es"
+                ? "Implementé un servicio de firma digital de documentos utilizando librerías en Python."
+                : "Implemented a digital document signing service using Python libraries."}
+            </p>
+            <p>
+              •{" "}
+              {language === "es"
+                ? "Refactoricé código backend para mejorar mantenibilidad y calidad."
+                : "Refactored backend code to improve maintainability and quality."}
+            </p>
+          </div>
         </div>
-
    
 
         <div className="experience__job">

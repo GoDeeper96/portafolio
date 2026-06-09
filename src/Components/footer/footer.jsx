@@ -11,15 +11,12 @@ const Footer = () => {
         <li><a href="#">Home</a></li>
    
         <li><a href="#experience">{language==='es'?'Experiencia':'Experience'}</a></li>
-        <li><a href="#abilities">{language==='es'?'Knowledge':'Habilidades Tecnicas'}</a></li>
-        <li><a href="#portfolio">{language==='es'?'Projects':'Proyectos'}</a></li>
+        <li><a href="#abilities">{language==='es'?'Habilidades Tecnicas':'Technical Skills'}</a></li>
+        <li><a href="#portfolio">{language==='es'?'Proyectos':'Projects'}</a></li>
    
       </ul>
-      <div className='footer__socials'>
-
-      </div>
-      <div>
-        <small color='white'>&copy; Copyright. Todos los derechos reservados</small>
+      <div className='footer__copyright'>
+        <small>&copy; {new Date().getFullYear()} Sebastian Julon. {language==='es'?'Todos los derechos reservados':'All rights reserved'}</small>
       </div>
     </footer>
   )

@@ -8,88 +8,70 @@ const Experience = () => {
       <h5>{language === "es" ? "Experiencia adquirida" : "Experience"}</h5>
       <h2>{language === "es" ? "Mi experiencia" : "My Work Experience"}</h2>
       <div className="container experience__container">
-        {/* <div className="experience__job">
+        <div className="experience__job" id="exp-utp">
           <div className="SpaceRowAround">
             <h2>
               <a href="https://www.utp.edu.pe/">UTP (Universidad Tecnológica del Perú)</a>
             </h2>
             <h5 className="text-light">{language === "es" ? "Sept.2025 - Actual" : "Sept.2025 - Present"}</h5>
           </div>
-          <h5 className="text-light">{language === "es" ? "Desarrollador Backend" : "Backend Developer"}</h5>
-          <div className="gridSeparated">
-            <div>
-              <h3 className="TextSubTititle">{language === "es" ? "Funciones" : `What I've done`}</h3>
-            </div>
-            <p>
-              •{" "}
-              {language === "es"
-                ? "Implementé soluciones usando servicios AWS (lambdas, S3, DynamoDB)."
-                : "Implemented solutions using AWS services (Lambdas, S3, DynamoDB)."}
-            </p>
-            <p>
-              •{" "}
-              {language === "es"
-                ? "Desarrollé MVPs/PoCs aprovechando tecnologías emergentes de IA usando Langchain y Langgraph."
-                : "Developed MVPs/PoCs leveraging emerging AI technologies using Langchain and Langgraph."}
-            </p>
-            <p>
-              •{" "}
-              {language === "es"
-                ? "Di soporte y mantenimiento a MVPs/PoCs y funcionalidades clave."
-                : "Provided support and maintenance to MVPs/PoCs and key functionalities."}
-            </p>
-            <p>
-              •{" "}
-              {language === "es"
-                ? "Investigué y evalué nuevas tecnologías para mejorar las aplicaciones existentes."
-                : "Researched and evaluated new technologies to improve existing applications."}
-            </p>
-          </div>
-        </div> */}
-        <div className="experience__job">
-          <div className="SpaceRowAround">
-            <h2>
-              <a href="https://indigital.pe/">Indigital</a>
-            </h2>
-            <h5 className="text-light">{language === "es" ? "Agos.2025 - Dec.2025" : "Aug.2025 - Dec.2025"}</h5>
-          </div>
-          <h5 className="text-light">{language === "es" ? "Desarrollador Backend" : "Backend Developer"}</h5>
+          <h5 className="text-light">{language === "es" ? "Desarrollador IA" : "AI Developer"}</h5>
           <div className="gridSeparated">
             <div>
               <h3 className="TextSubTititle">{language === "es" ? "Funciones" : `What I've done`}</h3>
               <p className="text-light">
-                Stack: AWS DynamoDB, S3, Python, API Gateway, Route 53, SQS, Lambda, WebSocket, Cognito
+                Stack: Python, FastAPI, LangChain, LangGraph, n8n, Google Vertex AI · AWS Bedrock (Knowledge Bases, Nova Pro, Guardrails), Lambda, API Gateway, SQS, DynamoDB, S3, Aurora Serverless v2 · Azure Functions, Service Bus, Blob Storage, Graph API · LLMs: Claude, Gemini, GPT
               </p>
             </div>
-            <p>
+            <p id="exp-utp-mvps">
               •{" "}
               {language === "es"
-                ? "Diseñé e implementé Amazon SQS para habilitar la comunicación cross-account entre dos aplicaciones basadas en DynamoDB, en distintos entornos, incluyendo integración en tiempo real mediante WebSockets."
-                : "Designed and implemented Amazon SQS to enable cross-account communication between two DynamoDB-based applications in different environments, including real-time integration via WebSockets."}
+                ? "Como parte del área/comunidad de IA de la UTP —referente para cualquier iniciativa de IA a nivel institucional— diseñé y desarrollé múltiples MVPs y PoCs para mejorar la experiencia de los estudiantes en cursos virtuales, sobre todo agentes de generación de contenido educativo (videos, PPTs, audio) construidos principalmente con Google Vertex AI."
+                : "As part of UTP's AI team — the go-to area for any institutional AI initiative — I designed and built multiple MVPs and PoCs to improve students' virtual-course experience, mainly content-generation agents for educational material (videos, slide decks, audio) built mostly on Google Vertex AI."}
             </p>
             <p>
               •{" "}
               {language === "es"
-                ? "Desarrollé funcionalidades backend con Python desplegando lambdas para dos módulos principales."
-                : "Developed backend functionalities with Python by deploying lambdas for two main modules."}
+                ? "Construí un sistema multiagente de generación de contenido pedagógico universitario con LangChain y Python usando distintos modelos LLM (GPT-4.1-mini + Gemini 2.5 Flash), automatizando la creación de esquemas de curso e IPES."
+                : "Built a multi-agent system for generating university pedagogical content with LangChain and Python using multiple LLMs (GPT-4.1-mini + Gemini 2.5 Flash), automating the creation of course outlines and IPES documents."}
             </p>
             <p>
               •{" "}
               {language === "es"
-                ? "Implementé un servicio de firma digital de documentos utilizando librerías en Python."
-                : "Implemented a digital document signing service using Python libraries."}
+                ? "Además, exploré chatbots de atención estudiantil: prototipé un pipeline RAG serverless en AWS (Lambda, API Gateway, SQS, DynamoDB, S3, Bedrock Knowledge Bases + Aurora Serverless pgvector) con generación vía Bedrock Nova Pro y Guardrails para filtrado de contenido y detección de PII."
+                : "Also explored student-support chatbots: prototyped a serverless RAG pipeline on AWS (Lambda, API Gateway, SQS, DynamoDB, S3, Bedrock Knowledge Bases + Aurora Serverless pgvector) with generation via Bedrock Nova Pro and Guardrails for content filtering and PII detection."}
+            </p>
+            <p id="exp-utp-experto">
+              •{" "}
+              {language === "es"
+                ? "Diseñé e implementé la arquitectura de Experto Temático, una solución de IA pensada para escalar a nivel empresarial, hoy mostrada como producto propio del área de IA."
+                : "Designed the architecture behind Experto Temático, an AI solution built to scale at an enterprise level, now showcased as a flagship product of the AI area."}
+              {" "}<a href="#project-experto-tematico" className="exp__project-link">{language === "es" ? "Ver proyecto →" : "See project →"}</a>
+            </p>
+            <p id="exp-utp-mayihear">
+              •{" "}
+              {language === "es"
+                ? "Lideré Mayihear, una suite de productividad para transcripción de audio —agente de Microsoft Teams a nivel empresarial vía Graph API y Azure Functions, más una app de escritorio para uso individual— que resume reuniones, responde preguntas por chat y genera Actas de Reunión automáticamente. Hoy la usan colaboradores de la UTP en su día a día, y se convirtió en mi tesis (ya validada)."
+                : "Led Mayihear, an audio-transcription productivity suite — an enterprise Microsoft Teams agent via Graph API and Azure Functions, plus an individual desktop app — that summarizes meetings, answers questions via chat, and automatically generates meeting minutes ('Actas de Reunión'). UTP staff now use it daily, and it became my (already validated) thesis."}
+              {" "}<a href="#project-mayihear" className="exp__project-link">{language === "es" ? "Ver proyecto →" : "See project →"}</a>
             </p>
             <p>
               •{" "}
               {language === "es"
-                ? "Refactoricé código backend para mejorar mantenibilidad y calidad."
-                : "Refactored backend code to improve maintainability and quality."}
+                ? "Diseñé flujos de automatización institucional con n8n, integrando LLMs (Claude, Gemini, GPT) para procesamiento de documentos y soporte operativo."
+                : "Designed institutional automation flows with n8n, integrating LLMs (Claude, Gemini, GPT) for document processing and operational support."}
+            </p>
+            <p>
+              •{" "}
+              {language === "es"
+                ? "Evalué y comparé modelos LLM (Claude, GPT, Gemini) en múltiples PoCs, seleccionando según costo, calidad y latencia para cada caso de uso."
+                : "Evaluated and compared LLM models (Claude, GPT, Gemini) across multiple PoCs, selecting based on cost, quality, and latency for each use case."}
             </p>
           </div>
         </div>
-   
 
-        <div className="experience__job">
+
+        <div className="experience__job" id="exp-periferia">
           <div className="SpaceRowAround">
             <h2>
               <a href="https://periferiaitgroup.pe/">Periferia IT Group SAC</a>
@@ -104,8 +86,8 @@ const Experience = () => {
             <p>
               •{" "}
               {language === "es"
-                ? "Desarrollo e implementación de soluciones full stack para un sistema de matrículas universitarias."
-                : "Development and implementation of full stack solutions for a university enrollment system."}
+                ? "Colaboré en el desarrollo del sistema de matrículas universitarias para la UTP, cliente del proyecto liderado por Periferia IT Group."
+                : "Contributed to building the university enrollment system for UTP, the client of the project led by Periferia IT Group."}
             </p>
             <p>
               •{" "}
@@ -116,8 +98,8 @@ const Experience = () => {
             <p>
               •{" "}
               {language === "es"
-                ? "Integré servicios cloud utilizando AWS, incluyendo funciones Lambda con bases de datos como DynamoDB y PostgreSQL."
-                : "Integrated cloud services using AWS, including Lambda functions with databases like DynamoDB and PostgreSQL."}
+                ? "Integré servicios cloud utilizando AWS, incluyendo funciones Lambda y DynamoDB junto con bases de datos como PostgreSQL."
+                : "Integrated cloud services using AWS, including Lambda functions and DynamoDB alongside databases like PostgreSQL."}
             </p>
             <p>
               •{" "}
@@ -134,7 +116,7 @@ const Experience = () => {
           </div>
         </div>
 
-        <div className="experience__job">
+        <div className="experience__job" id="exp-idslatam">
           <div className="SpaceRowAround">
             <h2>
               <a href="https://www.idslatam.com/">IDS Latam S.A.C</a>
@@ -179,13 +161,19 @@ const Experience = () => {
             <p>
               •{" "}
               {language === "es"
-                ? "Desarrollé servicios backend en .NET 8 dentro de un entorno de microservicios, aplicando arquitectura limpia."
-                : "Developed backend services in .NET 8 within a microservices environment, applying clean architecture."}
+                ? "Desarrollé servicios backend en .NET dentro de un entorno de microservicios."
+                : "Developed backend services in .NET within a microservices environment."}
+            </p>
+            <p>
+              •{" "}
+              {language === "es"
+                ? "Apoyé en la corrección de bugs y el mantenimiento de las aplicaciones existentes, además de construir reportes en Power BI."
+                : "Helped fix bugs and maintain existing applications, and built reports in Power BI."}
             </p>
           </div>
         </div>
 
-        <div className="experience__job">
+        <div className="experience__job" id="exp-radar365">
           <div className="SpaceRowAround">
             <h2>
               <a href="https://radar-365.com/">Radar 365</a>

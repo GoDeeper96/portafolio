@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV – Sebastian Julon Chamana (EN)</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Calibri", "Segoe UI", Arial, sans-serif;
+      font-size: 11pt;
+      color: #111;
+      background: #fff;
+      padding: 2cm 2.2cm;
+      max-width: 21cm;
+      margin: 0 auto;
+    }
+
+    /* ---- HEADER ---- */
+    .cv-name {
+      text-align: center;
+      font-size: 18pt;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 0.35em;
+    }
+    .cv-contact {
+      text-align: center;
+      font-size: 9.5pt;
+      color: #333;
+      margin-bottom: 1.1em;
+    }
+    .cv-contact a { color: #1a56b0; text-decoration: none; }
+
+    /* ---- SECTION HEADING ---- */
+    .section-title {
+      font-size: 11pt;
+      font-weight: 700;
+      margin-top: 1em;
+      margin-bottom: 0.25em;
+      border-bottom: 1.5px solid #111;
+      padding-bottom: 0.15em;
+    }
+
+    /* ---- PROFILE ---- */
+    .profile { margin-bottom: 0.6em; line-height: 1.5; }
+
+    /* ---- JOB BLOCK ---- */
+    .job { margin-bottom: 1em; }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.2em;
+    }
+    .job-title { font-weight: 700; font-size: 11pt; }
+    .job-dates  { font-size: 10pt; color: #333; white-space: nowrap; }
+
+    .job-company {
+      font-size: 10.5pt;
+      font-weight: 700;
+      text-decoration: underline;
+      margin-top: 0.1em;
+    }
+    .job-client {
+      font-size: 10pt;
+      font-weight: 700;
+      margin-top: 0.1em;
+    }
+    .job-stack {
+      font-size: 9.5pt;
+      font-weight: 700;
+      margin: 0.3em 0 0.4em;
+      line-height: 1.4;
+    }
+
+    .job-sub { font-weight: 700; font-size: 10pt; margin: 0.5em 0 0.2em; }
+
+    .job ul { padding-left: 1.1em; }
+    .job ul li { margin-bottom: 0.25em; line-height: 1.45; font-size: 10.5pt; }
+    .job p.bullet {
+      margin-bottom: 0.25em;
+      line-height: 1.45;
+      font-size: 10.5pt;
+      padding-left: 1.1em;
+      text-indent: -1.1em;
+    }
+
+    /* projects subsection */
+    .projects-heading {
+      font-weight: 700;
+      font-size: 10.5pt;
+      text-decoration: underline;
+      margin-top: 0.5em;
+      margin-bottom: 0.3em;
+    }
+    .project-name { font-weight: 700; }
+
+    /* ---- TECH TABLE ---- */
+    .tech-list { margin-top: 0.3em; }
+    .tech-list p {
+      font-size: 10.5pt;
+      line-height: 1.55;
+      margin-bottom: 0.15em;
+    }
+    .tech-label { font-weight: 700; }
+
+    /* ---- EDUCATION ---- */
+    .edu-block { margin-bottom: 0.6em; }
+    .edu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+    .edu-degree { font-weight: 700; font-size: 10.5pt; }
+    .edu-dates  { font-size: 10pt; color: #333; }
+    .edu-school { font-size: 10pt; }
+
+    /* ---- MISC LISTS ---- */
+    .misc-list { padding-left: 1.1em; margin-top: 0.3em; }
+    .misc-list li { font-size: 10.5pt; margin-bottom: 0.2em; line-height: 1.45; }
+
+    /* ---- RESEARCH ---- */
+    .research-item { margin-top: 0.3em; }
+    .research-item p { font-size: 10.5pt; line-height: 1.5; }
+
+    /* ---- PRINT ---- */
+    @media print {
+      body { padding: 1.5cm 1.8cm; }
+      a { color: #1a56b0; }
+      .job, .edu-block { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <div class="cv-name">Sebastian Julon Chamana</div>
+  <div class="cv-contact">
+    Lima, Peru &nbsp;|&nbsp;
+    <a href="tel:+51994244459">+51 994244459</a> &nbsp;|&nbsp;
+    <a href="mailto:antidote149@hotmail.com">antidote149@hotmail.com</a> &nbsp;|&nbsp;
+    <a href="#">Portfolio Web</a> &nbsp;|&nbsp;
+    <a href="#">LinkedIn</a>
+  </div>
+
+  <!-- ===== PROFESSIONAL PROFILE ===== -->
+  <div class="section-title">Professional Profile</div>
+  <p class="profile">
+    Committed to building innovative technology, with over 3 years and 6 months of professional experience
+    in the analysis, design, development, testing, deployment and maintenance of APIs, web applications,
+    integrations, ERP B2B/B2C systems, cloud services and process automation — always focused on digital
+    transformation and client satisfaction.
+  </p>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <div class="section-title">Experience</div>
+
+  <!-- UTP -->
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title">AI Developer</span>
+      <span class="job-dates">Sept.2025 – Present</span>
+    </div>
+    <div class="job-company">UTP (Universidad Tecnologica del Perú)</div>
+    <p class="job-stack">
+      Stack: Python, FastAPI, LangChain, LangGraph, n8n &nbsp;·&nbsp;
+      AWS: Bedrock (Knowledge Bases, Nova Pro, Guardrails), Lambda, API Gateway, SQS, DynamoDB, S3, Aurora Serverless v2
+      &nbsp;·&nbsp; Azure: Functions, Service Bus, Blob Storage, Graph API &nbsp;·&nbsp; LLMs: Claude, Gemini, GPT.
+    </p>
+    <p class="bullet">- Developed an AI chatbot for Student Support with a serverless RAG pipeline on AWS (Lambda, API Gateway, SQS, DynamoDB, S3, Bedrock Knowledge Bases + Aurora Serverless pgvector), generation via Bedrock Nova Pro and Guardrails for content filtering and PII detection.</p>
+    <p class="bullet">- Built a multi-agent system for university pedagogical content generation with LangChain and Python using different LLM models (GPT-4.1-mini + Gemini 2.5 Flash), automating the creation of course schemas and IPES.</p>
+    <p class="bullet">- Developed a Microsoft Teams agent on Azure Functions, integrated with Graph API to automatically process meeting transcriptions, generate insights with LLMs and publish them on Monday.com via Azure Service Bus.</p>
+    <p class="bullet">- Designed institutional automation workflows with n8n, integrating LLMs (Claude, Gemini, GPT) for document processing and operational support.</p>
+    <p class="bullet">- Evaluated and compared LLM models (Claude, GPT, Gemini) across multiple PoCs, selecting based on cost, quality and latency per use case.</p>
+  </div>
+
+  <!-- Periferia -->
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title">FullStack Developer</span>
+      <span class="job-dates">May.2025 – Jul.2025</span>
+    </div>
+    <div class="job-company">Periferia IT Group SAC</div>
+    <div class="job-client">Client: UTP</div>
+    <p class="job-stack">Stack: React, Node.js, NestJS, AWS (Lambda), DynamoDB, PostgreSQL, Azure DevOps and SonarQube</p>
+    <div class="job-sub">Backend</div>
+    <p class="bullet">- Development and implementation of full stack solutions for a university enrollment system.</p>
+    <p class="bullet">- Implementation of REST APIs using Node.js and NestJS.</p>
+    <p class="bullet">- Cloud service integration using AWS, including Lambda functions with DynamoDB and PostgreSQL.</p>
+    <div class="job-sub">Frontend</div>
+    <p class="bullet">- Development of modern interfaces with React, TypeScript and Vite.</p>
+    <p class="bullet">- Implementation of unit tests with Jest, complying with quality standards defined by SonarQube in Azure DevOps.</p>
+  </div>
+
+  <!-- IDS Latam -->
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title">FullStack Developer</span>
+      <span class="job-dates">Mar.2025 – May.2025</span>
+    </div>
+    <div class="job-company">IDS Latam S.A.C</div>
+    <p class="job-stack">Stack: React, TypeScript, .NET 8, Clean Architecture, Multi-module, MicroFrontend with webpack, Github, SQL Server, Relational databases.</p>
+    <div class="job-client">Client: IXM Metals</div>
+    <div class="job-sub">Backend</div>
+    <p class="bullet">- Developed backend services in .NET 8 within a microservices environment, applying clean architecture.</p>
+    <p class="bullet">- Integrated and consumed REST APIs with a focus on performance and security.</p>
+    <div class="job-sub">Frontend</div>
+    <p class="bullet">- Analyzed and translated functional requirements into efficient technical solutions.</p>
+    <p class="bullet">- Designed, developed and maintained user interfaces with React and TypeScript, ensuring the best user experience.</p>
+    <p class="bullet">- Participated in the migration of JavaScript-based applications to modern architectures with React.</p>
+    <p class="bullet">- Collaborated in the adoption of Micro-Frontends, promoting modularity and component independence.</p>
+  </div>
+
+  <!-- Radar365 -->
+  <div class="job">
+    <div class="job-header">
+      <span class="job-title">FullStack Developer</span>
+      <span class="job-dates">May.2023 – Mar.2025</span>
+    </div>
+    <div class="job-company">Radar365</div>
+    <div class="job-client">Client: PG Procter</div>
+    <p class="job-stack">Stack: React, AWS, ApiGateway, DynamoDB, S3, Cognito, Lambdas, TypeScript, NodeJS.</p>
+    <div class="job-sub">Backend</div>
+    <p class="bullet">- Implemented and maintained serverless APIs in Node.js using AWS Lambda and API Gateway to integrate mobile applications, web platforms and other cloud services, handling over <strong>200 daily requests</strong>.</p>
+    <p class="bullet">- Used DynamoDB to reduce costs and improve adaptability to AWS services, easily connecting Websockets where required.</p>
+    <p class="bullet">- Deployed AWS services using SAM and CloudFormation to accelerate service creation across dev, QA and prod environments.</p>
+    <p class="bullet">- Developed enterprise <strong>B2B solutions</strong> for the secure governance and distribution of data between companies and over <strong>50 supplier users</strong>.</p>
+    <div class="job-sub">Frontend</div>
+    <p class="bullet">- Migrated desktop applications to the web using React, TypeScript and JavaScript, deploying with AWS Amplify and SAM.</p>
+    <p class="bullet">- Used Figma designs provided by UX specialists to build the user interface.</p>
+    <div class="projects-heading">Projects &amp; Achievements</div>
+    <p class="bullet">- <span class="project-name">YALO-HablaPEPE:</span> Developed an algorithm for the promotions logic, optimizing its workflow and ensuring efficiency in promotions management. Created a robust API in Node.js with DynamoDB, designed to handle concurrent and recurring traffic, ensuring over <strong>200 daily queries</strong> without interruptions.</p>
+    <p class="bullet">- <span class="project-name">Analytics Project:</span> Designed and developed a B2B web platform used by over <strong>50 active users</strong>, offering: bulk data export optimized for large volumes; advanced filtering and segmentation features; detailed role and permission management to ensure security and accessibility.</p>
+  </div>
+
+  <!-- ===== TECH KNOWLEDGE ===== -->
+  <div class="section-title">Tech Knowledge</div>
+  <div class="tech-list">
+    <p><span class="tech-label">Programming Languages:</span> Javascript, Python, TypeScript, Java, and C#.</p>
+    <p><span class="tech-label">Frameworks &amp; Libraries:</span> NodeJS, React, NestJS, Next.js, Spring, React Native, Expo, .NET, FastAPI, Electron, LangChain, LangGraph, n8n.</p>
+    <p><span class="tech-label">Databases:</span> SQL Server, MongoDB, PostgreSQL, Redis, Clickhouse, DynamoDB.</p>
+    <p><span class="tech-label">Data Analysis Tools:</span> SQL Server Analysis Services, Integration Services SQL Server, Grafana, MicroStrategy.</p>
+    <p><span class="tech-label">Web Analytics:</span> Google Data Studio, Power BI.</p>
+    <p><span class="tech-label">Operating Systems:</span> Linux (Ubuntu 24), Windows Server 2016.</p>
+    <p><span class="tech-label">Cloud Services:</span> Amazon AWS (Bedrock, Lambda, API Gateway, SQS, DynamoDB, S3, Aurora Serverless), GCP (Google Cloud), Azure.</p>
+    <p><span class="tech-label">Optimization &amp; Testing:</span> Jest, Black-box testing, A/B Testing, JMeter, Selenium.</p>
+    <p><span class="tech-label">Version Control:</span> Github, Azure DevOps, Gitlab.</p>
+    <p><span class="tech-label">Methodology:</span> Agile, Scrum.</p>
+  </div>
+
+  <!-- ===== ACADEMIC EDUCATION ===== -->
+  <div class="section-title">Academic Education</div>
+  <div class="edu-block">
+    <div class="edu-degree">Bachelor's Degree in Information Systems Engineering</div>
+    <div class="edu-header">
+      <span class="edu-school">Universidad Peruana de Ciencias Aplicadas</span>
+      <span class="edu-dates">Aug.2015 – Dec.2023</span>
+    </div>
+  </div>
+
+  <!-- ===== LANGUAGES ===== -->
+  <div class="section-title">Languages</div>
+  <ul class="misc-list">
+    <li>Spanish (Native)</li>
+    <li>English (B2) – IELTS Score 6.5</li>
+  </ul>
+
+  <!-- ===== COMPLEMENTARY EDUCATION ===== -->
+  <div class="section-title">Complementary Education</div>
+  <ul class="misc-list">
+    <li>IBM Cybersecurity Analyst Professional Certificate – 2022</li>
+    <li>IELTS Academic Exam – 2022</li>
+    <li>SCRUM STUDY Scrum Fundamentals Certified (SFC) – 2022</li>
+    <li>IBM Cloud Application Development Foundations (Cloud Computing, HTML/CSS/JavaScript, Cloud Native Applications, NodeJS &amp; React) – 2023</li>
+    <li>UI/UX Design – CalArts / Coursera – 2023</li>
+    <li>Microsoft Certified: Azure Fundamentals AZ-900 – 2025</li>
+  </ul>
+
+  <!-- ===== ACADEMIC RESEARCH ===== -->
+  <div class="section-title">Academic Research</div>
+  <div class="research-item">
+    <p>
+      <strong>Predictive Analysis System based on Machine Learning to reduce voluntary resignations in Lima, Peru (bachelor's thesis):</strong>
+      Developed a system in Python using numpy, pandas and SQLite that analyzes and predicts voluntary employee resignations using machine learning models, improving result predictability and precision.
+    </p>
+  </div>
+
+</body>
+</html>

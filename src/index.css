@@ -11,25 +11,46 @@
 
 }
 :root{
-    --color-bg: #1f1f38;
-    --color-bg-variant: #2c2c6c;
-    --color-primary: #0075eb;
-    --color-door:var(--color-bg);
-    --color-primary-variant: rgba(77,181,255,0.4);
+    --color-bg: #0f1117;
+    --color-bg-variant: #1a1f2e;
+    --color-primary: #10b981;
+    --color-primary-variant: rgba(16,185,129,0.3);
     --color-white:#fff;
     --color-light:rgba(255,255,255,0.6);
+    --color-body-bg: #070d0b;
     --transition: all  400ms ease;
     --container-width-lg:75%;
     --container-width-md:86%;
     --container-width-sm:90%;
-    --color-green: #01020d;
+}
+
+[data-theme="classic"] {
+    --color-bg: #1f1f38;
+    --color-bg-variant: #2c2c6c;
+    --color-primary: #0075eb;
+    --color-primary-variant: rgba(77,181,255,0.4);
+    --color-body-bg: #000000;
+}
+[data-theme="violet"] {
+    --color-bg: #0d0d14;
+    --color-bg-variant: #1a1428;
+    --color-primary: #8b5cf6;
+    --color-primary-variant: rgba(139,92,246,0.3);
+    --color-body-bg: #070610;
+}
+[data-theme="amber"] {
+    --color-bg: #111008;
+    --color-bg-variant: #1e1c0f;
+    --color-primary: #f59e0b;
+    --color-primary-variant: rgba(245,158,11,0.3);
+    --color-body-bg: #0a0800;
 }
 html{
     scroll-behavior: smooth;
 }
 body {
     font-family: "Poppins",sans-serif;
-    background: #000000;
+    background: var(--color-body-bg);
     color:var(--color-white);
     line-height: 1.7;
     /* background-image: url(./assets/pngtree-matrix-digital-code-hacker-background-image_908354.png);

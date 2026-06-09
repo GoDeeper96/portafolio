@@ -9,13 +9,10 @@
     border-radius: 1rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    scroll-margin-top: 6rem;
 }
 .TextSubTititle{
     margin-bottom: 0.5rem;
-}
-.ProyectBox{
-    margin-bottom: 1rem;
-
 }
 
 .gridSeparated{
@@ -23,19 +20,15 @@
     gap:1rem;
     /* grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); */
 }
+.gridSeparated p[id]{
+    scroll-margin-top: 7rem;
+}
 .SpaceRowAround{
     display: flex;
     flex-direction: row;
     gap: 4rem;
     margin-bottom: 0.5rem;
     align-items: center;
-}
-.experienceContainerJob {
-    border: 0.5px solid var(--color-primary);
-    padding: 2rem;
-    margin-left: 15rem;
-    border-radius: 0.5rem;
-    margin-right: 15rem;
 }
 .experience__container > div:hover{
     background: transparent;
@@ -92,3 +85,14 @@
     
 } 
 
+
+.exp__project-link {
+    color: var(--color-primary);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+    opacity: 0.85;
+    transition: opacity 250ms ease;
+}
+.exp__project-link:hover { opacity: 1; text-decoration: underline; }
